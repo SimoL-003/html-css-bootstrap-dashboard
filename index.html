@@ -70,18 +70,18 @@
     <main>
         <div class="container-fluid container-md container-lg pt-4">
             <div class="row">
-                <div class="col-12 col-lg-8">
+                <!-- Table div -->
+                <div class="col-12 col-xl-8">
                     <div class="d-flex justify-content-between align-items-center pb-3">
                         <h2 class="mb-0">Catalogo Libri</h2>
                         <a href="#"
                            class="btn btn-primary">Aggiungi Libro</a>
                     </div>
-                    <!-- Table -->
                     <table class="table table-striped align-middle">
                         <thead>
                             <tr>
                                 <th>Titolo</th>
-                                <th class="d-sm-none d-md-table-cell">Data prestito</th>
+                                <th class="d-none d-md-table-cell">Data prestito</th>
                                 <th>Stato</th>
                                 <th class="text-center">Azioni</th>
                             </tr>
@@ -89,10 +89,11 @@
                         <tbody>
                             <tr>
                                 <td>Lorem ipsum</td>
-                                <td class="d-sm-none d-md-table-cell">000000</td>
+                                <td class="d-none d-md-table-cell">000000</td>
                                 <td><span class="badge text-bg-success">Lorem ipsum</span> </td>
-                                <td class="text-center"><a href=""
-                                       class="btn btn-outline-secondary p-2">
+                                <td class="text-center">
+                                    <a class="btn btn-outline-secondary p-2"
+                                       href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              width="20px"
                                              height="20px"
@@ -114,9 +115,10 @@
                             </tr>
                             <tr>
                                 <td>Lorem ipsum</td>
-                                <td>000000</td>
+                                <td class="d-none d-md-table-cell">000000</td>
                                 <td>Lorem ipsum</td>
-                                <td class="text-center"><a href=""
+                                <td class="text-center">
+                                    <a href="#"
                                        class="btn btn-outline-secondary p-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              width="20px"
@@ -140,26 +142,51 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- /Table div -->
 
-                <div class="col-12 col-lg-4">
+
+                <div class="col-12 col-xl-4">
                     <!-- Todo card -->
-                    <div class="card">
-                        <div class="card">
-                            <div class="card-header">
-                                Featured
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2>Todo</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1"
+                                           type="checkbox"
+                                           value=""
+                                           id="firstCheckbox">
+                                    <label class="form-check-label"
+                                           for="firstCheckbox">Chiamare segreteria</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1"
+                                           type="checkbox"
+                                           value=""
+                                           id="secondCheckbox">
+                                    <label class="form-check-label"
+                                           for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1"
+                                           type="checkbox"
+                                           value=""
+                                           id="thirdCheckbox">
+                                    <label class="form-check-label"
+                                           for="thirdCheckbox">Ordinare nuovi libri</label>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    <!-- /Todo card -->
+
                     <!-- FAQ Card -->
                     <div class="card">
                         <div class="card">
                             <div class="card-header">
-                                Featured
+                                <h2>F.A.Q.</h2>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
@@ -168,6 +195,8 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- /FAQ Card -->
+
                 </div>
             </div>
         </div>
