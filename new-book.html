@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <title>New Book</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"
+             data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand"
+                   href="./index.html"><img src="./img/duck.png"
+                         width="60"
+                         height="60"
+                         alt="Logo"></a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                     id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               aria-disabled="true">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container py-3">
+            <h2>Nuovo Libro</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-6 py-2">
+                        <label for="name"
+                               class="form-label">Nome Autore</label>
+                        <input id="name"
+                               class="form-control"
+                               type="text"
+                               placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6 py-2">
+                        <label for="lastName"
+                               class="form-label">Nome Autore</label>
+                        <input id="lastName"
+                               class="form-control"
+                               type="text"
+                               placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                    <div class="col-12 py-2">
+                        <label for="title"
+                               class="form-label">Titolo</label>
+                        <input id="title"
+                               type="text"
+                               class="form-control"
+                               placeholder="Inserisci il titolo del libro"
+                               aria-describedby="titlelHelp">
+                        <div id="titlelHelp"
+                             class="form-text">Titolo versione italiana</div>
+                    </div>
+                    <div class="col-12 col-md-4 py-2">
+                        <label for="genre"
+                               class="form-label">Genere</label>
+                        <select id="genre"
+                                class="form-select"
+                                aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Horror</option>
+                            <option value="2">Fantasy</option>
+                            <option value="3">Giallo</option>
+                            <option value="4">Fantascienza</option>
+                            <option value="5">Thriller</option>
+                            <option value="6">Romantico</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 py-2">
+                        <label for="year"
+                               class="form-label">Anno di Pubblicazione</label>
+                        <input id="year"
+                               type="number"
+                               class="form-control"
+                               placeholder="Inserisci l'anno"
+                               minlength="4"
+                               maxlength="4">
+                    </div>
+                    <div class="col-12 col-md-4 py-2">
+                        <label for="isbn"
+                               class="form-label">ISBN#</label>
+                        <input id="isbn"
+                               type="number"
+                               class="form-control"
+                               placeholder="Inserisci il codice ISBN#">
+
+                    </div>
+                    <div class="col-12">
+                        <hr class="my-4">
+                    </div>
+                    <div class="col-12 py-2">
+                        <label for="note"
+                               class="form-label">Note</label>
+                        <textarea id="note"
+                                  name=""
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Inserisci eventuali note sul libro"
+                                  style="resize: none;"></textarea>
+                    </div>
+                    <div class="form-check py-2">
+                        <input id="digitalVersion"
+                               type="checkbox"
+                               class="form-check-input"
+                               value=""
+                               style="margin-left: -10px; margin-right: 10px;">
+                        <label for="digitalVersion"
+                               class="form-check-label">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                    <div class="col-12 py-2">
+                        <button type="submit"
+                                class="btn btn-primary">Aggiungi Libro</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
